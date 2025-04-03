@@ -10,14 +10,16 @@ userRouter.get("/:id", (req, res) => {
     res.send({title: "User"})
 })
 
-userRouter.get("/", (req, res) => {
+userRouter.post("/", (req, res) => {
     res.send({title: "User"})
 })
 
-userRouter.get("/", (req, res) => {
+userRouter.put("/:id", (req, res) => {
     res.send({title: "User"})
 })
 
-userRouter.get("/", (req, res) => {
+userRouter.delete("/:id", (req, res) => {
     res.send({title: "User"})
 })
+
+export default userRouter;
